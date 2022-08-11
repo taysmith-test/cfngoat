@@ -8,7 +8,7 @@ Resources:
           Value: Sovereign
       BucketName: !Join
         - "-"
-        - - "starship-bay"
+        - - "starship-bay2"
           - !Select
             - 0
             - !Split
