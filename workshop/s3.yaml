@@ -17,4 +17,4 @@ Resources:
                 - 2
                 - !Split
                   - "/"
-                  - !Ref "AWS::StackId"
+                  - !Ref "AWS::StackId" 
