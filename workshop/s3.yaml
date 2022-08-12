@@ -5,6 +5,7 @@ Resources:
     Properties:
       PublicAccessBlockConfiguration:
         IgnorePublicAcls: true
+        RestrictPublicBuckets: true
       Tags:
         - Key: Class
           Value: Sovereign
