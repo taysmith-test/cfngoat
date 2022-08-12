@@ -3,11 +3,18 @@ Resources:
     Type: 'AWS::S3::Bucket'
     DeletionPolicy: Retain
     Properties:
+      PublicAccessBlockConfiguration:
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
       Tags:
         - Key: Class
           Value: Sovereign
         - Key: Tag
-          Value: No
+          Value: Fine
       BucketName: !Join
         - "-"
         - - "starship-bay2"
