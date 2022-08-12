@@ -3,6 +3,8 @@ Resources:
     Type: 'AWS::S3::Bucket'
     DeletionPolicy: Retain
     Properties:
+      PublicAccessBlockConfiguration:
+        IgnorePublicAcls: true
       Tags:
         - Key: Class
           Value: Sovereign
