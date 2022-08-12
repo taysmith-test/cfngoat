@@ -6,6 +6,8 @@ Resources:
       Tags:
         - Key: Class
           Value: Sovereign
+        - Key: Tag
+          Value: Yes
       BucketName: !Join
         - "-"
         - - "starship-bay2"
