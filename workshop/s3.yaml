@@ -17,7 +17,7 @@ Resources:
           Value: Fine
       BucketName: !Join
         - "-"
-        - - "starship-bay2"
+        - - "starship-bay3"
           - !Select
             - 0
             - !Split
